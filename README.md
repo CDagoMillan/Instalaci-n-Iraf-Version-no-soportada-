@@ -12,7 +12,7 @@ Esta instalación está dirigida a quienes por alguna razón necesita o prefiere
 
 La instalación se realizará a través de lineas de comando en terminal. 
 
-Esta es una versión basada, adaptada y actualizada de la presentada por Rubab Khan (khan@astronomy.ohio-state.edu)
+Esta es una versión basada en la presentada por Rubab Khan (khan@astronomy.ohio-state.edu)
 
 ## 2. Instalación IRAF
 ### 2.1 Descargas
