@@ -17,9 +17,9 @@ Esta es una versión basada en la presentada por Rubab Khan (khan@astronomy.ohio
 ## 2. Instalación IRAF
 ### 2.1 Descargas
 
-En su carpeta Descargas (Dowloads) descargue el archivo [IRAF_VersinClsica.tar.xz](https://1drv.ms/u/s!AnFDFXokQzgljB0-3E8e2sM1hAJW). Este archivo comprimido contiene los archivos: ***iraf.lnux.x86_64.tar.gz***, ***x11iraf-v2.0BETA-bin.linux.tar.gz***, ***exercises.tar.xz*** e ***iraf***.
+En su carpeta Descargas (Downloads) descargue el archivo [IRAF_VersinClsica.tar.xz](https://1drv.ms/u/s!AnFDFXokQzgljB0-3E8e2sM1hAJW). Este archivo comprimido contiene los archivos: ***iraf.lnux.x86_64.tar.gz***, ***x11iraf-v2.0BETA-bin.linux.tar.gz***, ***exercises.tar.xz*** e ***iraf***.
 
-Para descomprimir desde terminal el archivo ***IRAF_VersinClsica.tar.xz*** en la carpeta Descargas (Dowloads), inicie abriendo la terminal tecleando: 
+Para descomprimir desde terminal el archivo ***IRAF_VersinClsica.tar.xz*** en la carpeta Descargas (Downloads), inicie abriendo la terminal tecleando: 
 
 ```
 Ctrl + Alt + T
@@ -39,7 +39,8 @@ En esta misma terminal (la anteriormente abierta) actualice las librerias que us
 
 ```
 cd
-sudo apt-get install tcsh libxss1 lib32z1 lib32ncurses6 libbz2-1.0:i386 libxmu6:i386 
+sudo apt-get install tcsh libxss1 lib32z1 lib32ncurses6 libbz2-1.0:i386 libxmu6:i386
+sudo apt-get install libxmu6:i386
 sudo apt-get install libncurses5:i386
 sudo apt-get install libncurses5
 ```  
@@ -126,7 +127,7 @@ Ahora, instalaremos el visor de imágenes **ds9**.
 
 Siga el link [saoimageds9](https://sites.google.com/cfa.harvard.edu/saoimageds9), descargue en la carpeta *Descargas* (Downloads) el archivo ***ds9.ubuntu20.8.3.tar.gz*** (descargue una version reciente para linux).
 
-Ahora regrese a la carpeta *Descargas* (continué en la misma terminal) y descomprima el archivo:
+Ahora regrese a la carpeta *Descargas* (continúe en la misma terminal) y descomprima el archivo:
 ```
 cd
 cd Descargas
@@ -155,11 +156,11 @@ mkiraf
 y damos *Enter* para indicar que el tipo de terminal a usar es *xgterm*.
 
 
-Luego, desde la carpeta Descargas (Dowloads) se moverá el script *iraf* a ***Home****, con la siguiente instrucción
+Luego, desde la carpeta Descargas (Downloads) se moverá el script *iraf* a ***Home****, con la siguiente instrucción
 
 ```
 cd
-cd Descargas/IRAF_versinClasic/
+cd Descargas/IRAF_VersinClsica/
 sudo mv iraf ~/
 ```
 Ahora, se hará ejecutable el script de ***home***
