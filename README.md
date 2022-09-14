@@ -125,7 +125,7 @@ No cierre la terminal.
 
 Ahora, instalaremos el visor de imágenes **ds9**.
 
-Siga el link [saoimageds9](https://sites.google.com/cfa.harvard.edu/saoimageds9), descargue en la carpeta *Descargas* (Downloads) el archivo ***ds9.ubuntu20.8.3.tar.gz*** (descargue una version reciente para linux).
+Siga el link [saoimageds9](https://sites.google.com/cfa.harvard.edu/saoimageds9), descargue en la carpeta *Descargas* (Downloads) el archivo ***ds9.ubuntu20.8.3.tar.gz*** (descargue una versión reciente para linux).
 
 Ahora regrese a la carpeta *Descargas* (continúe en la misma terminal) y descomprima el archivo:
 ```
