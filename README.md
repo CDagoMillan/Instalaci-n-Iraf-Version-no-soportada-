@@ -1,40 +1,41 @@
-# Instalación de IRAF en Ubuntu/Debian Linux (Versión no soportada) 
+
+# Instalación de IRAF en Ubuntu/Debian Linux (Versión no soportada)
 
 ---
 
 ## 1. Introducción
 
 Aquí se indica la instalación de IRAF en su versión ahora no soportada, para Ubuntu/Debian en arquitecturas de 64-bit.
-Se incluye la activación de la herramienta de de visualización DS9.
+Se incluye la activación de la herramienta de visualización DS9.
 
-Esta instalación está dirigida a quienes por alguna razón necesita o prefieren el trabajo en las versión inicial de instalación. Para la versión actual diríjase a https://iraf-community.github.io/pyraf.html
+Esta instalación está dirigida a quienes por alguna razón necesita o prefieren el trabajo en las versión inicial. Para la versión actual diríjase a https://iraf-community.github.io/pyraf.html
 
 La instalación se realizará a través de lineas de comando en terminal. 
 
 Esta es una versión basada, adaptada y actualizada de la presentada por Rubab Khan (khan@astronomy.ohio-state.edu)
 
-##2. Instalación IRAF
-###2.1 Descargas
+## 2. Instalación IRAF
+### 2.1 Descargas
 
-En su carpeta Descargas (o Dowloads) descargue el archivo [IRAF_VersinClsica.tar.xz](https://1drv.ms/u/s!AnFDFXokQzgljB0-3E8e2sM1hAJW). Este archivo comprimido contiene los archivos: ***iraf.lnux.x86_64.tar.gz***, ***x11iraf-v2.0BETA-bin.linux.tar.gz***, ***exercises.tar.xz*** e ***iraf***.
+En su carpeta Descargas (Dowloads) descargue el archivo [IRAF_VersinClsica.tar.xz](https://1drv.ms/u/s!AnFDFXokQzgljB0-3E8e2sM1hAJW). Este archivo comprimido contiene los archivos: ***iraf.lnux.x86_64.tar.gz***, ***x11iraf-v2.0BETA-bin.linux.tar.gz***, ***exercises.tar.xz*** e ***iraf***.
 
-Para descomprimir desde terminal el archivo ***IRAF_VersinClsica.tar.xz*** en la carpeta Descargas (o Dowloads), inicie abriendo la terminal a través de oprimir simultáneamente las teclas: 
+Para descomprimir desde terminal el archivo ***IRAF_VersinClsica.tar.xz*** en la carpeta Descargas (Dowloads), inicie abriendo la terminal tecleando: 
 
 ```
 Ctrl + Alt + T
 ```
-en la terminal copie y pegue las dos instrucciones (debe tener instalado el descopresor, pude hacerlo pegando en la terminal  ` sudo apt-get install tar`)
+en la terminal copie y pegue las siguientes dos instrucciones (debe tener instalado el descopresor, pude hacerlo pegando en la terminal  ` sudo apt-get install tar`)
 
 ```
 cd Descargas
 tar -xf IRAF_VersinClsica.tar.xz
 ```
 
-no ciere la terminal.
+no cierre la terminal.
 
-###2.2 Instalación iraf
+### 2.2 Instalación iraf
 
-En esta misma terminal (la anteriormente abierta) actualice las paqueterías que usa IRAF, copie y pegue la siguiente instrucción que actualizará e instalará dichas librerías :
+En esta misma terminal (la anteriormente abierta) actualice las librerias que usa IRAF, copie y pegue la siguiente instrucción que actualizará e instalará dichas librerías :
 
 ```
 cd
@@ -91,22 +92,22 @@ cd /
   ```
   en esta última instrucción indique a la terminal que debe continuar escribiendo *yes* (o solamente *y*), luego use la tecla *Enter*.
 
-  Entre otras, irán apareciendo en su orden las siguientes instrucciones,  a las cuales debe ir tecleando *Enter*:
+  Entre otras, irán apareciendo en su orden las siguientes instrucciones, a las cuales debe ir tecleando *Enter*:
   ```
   New iraf root directory (/iraf/iraf): 
   Default root image storage directory (/iraf/imdirs): 
   Default root cache directory (/iraf/cache): 
   Local unix commands directory (/usr/local/bin): 
   ```
-  Una vez finalizado este proceso deberá aparecerá:
+  Una vez finalizado este proceso aparecerá:
 
   ```
   ========================================================================
-================  Installation Completed With No Errors  ===============
-========================================================================
+  ================  Installation Completed With No Errors  ===============
+  ========================================================================
   ```
 
-*   Continúe de manera similar a lo anterior, ingresando a la carpeta ***x11iraf***:
+* Continúe de manera similar a lo anterior, ingresando a la carpeta ***x11iraf***:
 
   ```
   cd ..
@@ -139,7 +140,7 @@ sudo mv ds9 /usr/local/bin/.
 
 ## 4. Script para iniciar Iraf y ds9
 
-Primero cree la carpeta *IRAF* (aquí se alojará la carpeta de parámetros del las tares de Iraf *uparm*):
+Primero cree la carpeta *IRAF* (aquí se alojará la carpeta de parámetros del las taraes de Iraf *uparm*):
 ```
 cd
 mkdir IRAF
@@ -181,10 +182,9 @@ escriba en esta terminal
 ```
 ./iraf
 ```
-y tecleé *Enter*. Esta instrucción le abrirá Iraf en una terminal tipo xgterm.
+y tecleé *Enter*. Esta instrucción le abrirá Iraf en una terminal tipo xgterm y el visor DS9.
 
 ## 6. Comentarios
 
 Si presenta problemas con los paquetes de 32 bits que usa IRAF, es posible que se deba al cambio de nombre del paquete por las versiones más actuales (por ejemplo de *libncurses5* a *lib32ncurses6* ). 
 La recomendación es hacer una consulta del nombre del paquete actualizado y reemplazar en las lineas donde se instalan los paquetes.
-"""
